@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       model_name:
-        description: 'Enter the model name, like "daffadevhosting/Text-to-Img_lyR4"'
+        description: 'Enter the model name, like "daffadevhosting/text-to-img_lyr4"'
         required: true
 
 jobs:

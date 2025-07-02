@@ -1,4 +1,4 @@
-### 🎨 Text-to-Image_lyR4 Model (by daffa)
+### Text-to-Image_lyR4 Model (by daffa)
 
 Model ini digunakan untuk mengubah teks menjadi gambar secara otomatis, cocok untuk keperluan seperti **AI Storybook**, visualisasi narasi, dan kebutuhan kreatif lainnya.
 
@@ -9,6 +9,47 @@ Model ini digunakan untuk mengubah teks menjadi gambar secara otomatis, cocok un
 ```bash
 cog login
 cog push r8.im/<your-username>/<your-model-name>
+```
+
+jalankan di node.js
+```bash
+npx create-replicate --model=daffadevhosting/text-to-img_lyra
+```
+
+Install Replicate’s Node.js client library
+```bash
+npm install replicate
+```
+
+Set REPLICATE_API_TOKEN
+```bash
+export REPLICATE_API_TOKEN=r8_3**********************
+```
+
+Import dan set up client
+```js
+import Replicate from "replicate";
+import fs from "node:fs";
+
+const replicate = new Replicate({
+  auth: process.env.REPLICATE_API_TOKEN,
+});
+```
+
+Jalankan `daffadevhosting/text-to-img_lyra` menggunakan API Replicate.
+```js
+const output = await replicate.run(
+  "daffadevhosting/text-to-img_lyra:7c54a0f4c2032d1948ccb0d9e9c3f16898e68a403f9537381f76dedab90adab7",
+  {
+    input: {}
+  }
+);
+
+// Untuk akses file URL:
+console.log(output.url()); //=> "http://example.com"
+
+// Menulis file ke disk:
+fs.writeFile("my-image.png", output);
 ```
 
 🖼️ Output

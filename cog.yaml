@@ -5,5 +5,6 @@ build:
     - diffusers[torch]
     - accelerate
     - safetensors
+    - transformers
 
 predict: "predict.py:Predictor"

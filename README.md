@@ -39,7 +39,7 @@ const replicate = new Replicate({
 Jalankan `daffadevhosting/text-to-img_lyra` menggunakan API Replicate.
 ```js
 const output = await replicate.run(
-  "daffadevhosting/text-to-img_lyra:7c54a0f4c2032d1948ccb0d9e9c3f16898e68a403f9537381f76dedab90adab7",
+  "daffadevhosting/text-to-img_lyra:7c54a0f4c2032d1948ccb0d9e9c3f16898--------------",
   {
     input: {}
   }

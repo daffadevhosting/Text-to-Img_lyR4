@@ -1,2 +1,5 @@
-# Text-to-Img_lyR4
-Text-to-Image_lyRa Model (by daffa)  Model ini digunakan untuk mengubah teks menjadi gambar secara otomatis.
+## 🎨 Text-to-Image lyra Model (by daffa)
+
+Model ini digunakan untuk mengubah teks menjadi gambar secara otomatis, cocok untuk keperluan seperti **AI Storybook**, visualisasi narasi, dan kebutuhan kreatif lainnya.
+
+---
